@@ -11,6 +11,7 @@ class NetworkHelper extends GetxService {
   final Dio _dio = Dio();
   final storageService = Get.find<StorageService>();
   static const httpTimeoutDuration = 60;
+  String baseUrl = "https://api.openweathermap.org/";
 
   Future<NetworkHelper> init() async {
     _dio.options.baseUrl = baseUrl;
