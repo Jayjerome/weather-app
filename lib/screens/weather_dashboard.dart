@@ -32,7 +32,7 @@ class WeatherDashboard extends GetView<AppController> {
                 () => controller.homeWeatherData.isNotEmpty
                     ? CarouselSlider(
                         options: CarouselOptions(
-                          height: size.height * .6,
+                          height: size.height * .7,
                           enlargeCenterPage: true,
                           autoPlay: true,
                           enableInfiniteScroll: false,

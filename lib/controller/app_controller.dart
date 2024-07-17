@@ -135,7 +135,6 @@ class AppController extends GetxController {
         currentLatitude.value = value.latitude;
       });
     } catch (e) {
-      showSnackBar('Unable to get current location', true);
     }
   }
 
@@ -155,7 +154,7 @@ class AppController extends GetxController {
     try {
       await storageService
           .saveWeatherModelsToStorage(selectedWeatherDataFile);
-      showSnackBar('Default locations saved', false);
+      showSnackBar('Locations updates successfully', false);
       Get.back();
       getDefault();
     }catch(e){
